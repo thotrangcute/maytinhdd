@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>lam may tinh</title>
+    <link rel="stylesheet" href="./main.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="container-text">
+        <p class="content-text">Calculator</p>
+      </div>
+      <div class="contentner">
+        <div class="result">
+          <div class="expression-text" id="expression"></div>
+          <span class="result-text" id="result">0</span>
+        </div>
+
+        <div class="push-button">
+          <button class="btn rice" data-filter="C">C</button>
+          <button class="btn se" data-filter="del">&#8656</button>
+          <button class="btn se" data-filter="%">%</button>
+          <button class="btn se" data-filter="/">÷</button>
+
+          <button class="btn" data-filter="1">1</button>
+          <button class="btn" data-filter="2">2</button>
+          <button class="btn" data-filter="3">3</button>
+          <button class="btn se" data-filter="*">x</button>
+
+          <button class="btn" data-filter="4">4</button>
+          <button class="btn" data-filter="5">5</button>
+          <button class="btn" data-filter="6">6</button>
+          <button class="btn se" data-filter="-">-</button>
+
+          <button class="btn" data-filter="7">7</button>
+          <button class="btn" data-filter="8">8</button>
+          <button class="btn" data-filter="9">9</button>
+          <button class="btn se" data-filter="+">+</button>
+
+          <button class="btn" data-filter=".">.</button>
+          <button class="btn" data-filter="0">0</button>
+          <button class="btn" data-filter="000">000</button>
+          <button class ="btn equal" data-filter="=">=</button>
+        </div>
+      </div>
+    </div>
+    <button class="toggle-dark" onclick="toggleDarkMode()"></button>
+
+    <script src="./main.js"></script>
+  </body>
+</html>
