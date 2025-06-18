@@ -32,12 +32,12 @@ btnnValue.forEach((button) => {
       try {
         if (!current) return;
         let computedExpr = current.replace(/([0-9.]+)%/g, "($1/100)");
-        const rawResult = eval(computedExpr);
-        resultDisplay.textContent = formatExpression(rawResult.toString());
+        const rowResult = eval(computedExpr);
+        resultDisplay.textContent = formatExpression(rowResult.toString());
         expressionDisplay.textContent = formatExpression(displayedExpr)
           .replace(/\*/g, "×")
           .replace(/\//g, "÷");
-        current = rawResult.toString();
+        current = rowResult.toString();
         lastWasEqual = true;
       } catch (err) {
         resultDisplay.textContent = "Error";
