@@ -52,6 +52,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  gap: 1%;
   border-top: 2px solid rgb(211, 211, 211);
   background-color: rgb(255, 255, 255);
   border-bottom-left-radius: 25px;
@@ -101,7 +102,7 @@ body {
 }
 
 .ceo {
-  font-size: 18px;
+  font-size: 15px;
 }
 @media (max-width: 430px) {
   .container {
