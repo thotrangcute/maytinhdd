@@ -95,6 +95,7 @@ btnnValue.forEach((button) => {
     }
   });
 });
+
 function toggleDarkMode() {
   document.body.classList.toggle("dark");
 }
