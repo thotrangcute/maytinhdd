@@ -28,6 +28,7 @@ btnnValue.forEach((button) => {
       current = "";
       displayedExpr = "";
       resultDisplay.textContent = "";
+
       expressionDisplay.textContent = "";
       lastWasEqual = true;
     } else if (value === "=") {
@@ -94,3 +95,6 @@ btnnValue.forEach((button) => {
     }
   });
 });
+function toggleDarkMode() {
+  document.body.classList.toggle("dark");
+}
